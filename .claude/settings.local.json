@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(npm run dev --prefix \"d:\\\\Code\\\\noturno\" 2>&1)",
+      "PowerShell($ErrorActionPreference='Continue')",
+      "PowerShell(winget list --name Node 2>&1)",
+      "PowerShell(winget show OpenJS.NodeJS.LTS 2>&1)",
+      "PowerShell(\"=== node conhecido pelo winget ===\")",
+      "PowerShell(\"=== versoes LTS disponiveis ===\")",
+      "PowerShell(winget list --name Node --source winget --accept-source-agreements --disable-interactivity 2>&1)",
+      "PowerShell(winget show OpenJS.NodeJS.LTS --source winget --accept-source-agreements --disable-interactivity 2>&1)",
+      "PowerShell(winget show OpenJS.NodeJS --source winget --accept-source-agreements --disable-interactivity 2>&1)",
+      "PowerShell(\"=== LTS ===\")",
+      "PowerShell(\"=== current ===\")",
+      "PowerShell(winget install OpenJS.NodeJS.LTS --source winget --accept-source-agreements --accept-package-agreements --disable-interactivity 2>&1)"
+    ]
+  }
+}

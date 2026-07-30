@@ -1,0 +1,20 @@
+:root {
+  /* backgrounds */
+  --void: #08070b; /* page background */
+  --surface: #110f16; /* cards, posts */
+  --surface-2: #17141e; /* raised: avatars, inputs */
+
+  /* borders */
+  --line: #241f2e; /* dividers, default border */
+  --line-hot: #3a3145; /* hover / emphasized border */
+
+  /* text */
+  --ink: #efecf4; /* primary text */
+  --ink-dim: #9a93a8; /* secondary text, icons */
+  --ink-faint: #635c70; /* placeholders, metadata */
+
+  /* accents */
+  --neon: #ff2d8f; /* primary — actions, active, liked */
+  --neon-deep: #b3105e; /* pressed / darker variant */
+  --ice: #2de2ff; /* secondary — tags, saved, focus ring */
+}
