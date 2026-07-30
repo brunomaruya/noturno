@@ -5,5 +5,5 @@
 }
 
 body {
-  background: color(var(--void));
+  background: var(--void);
 }
