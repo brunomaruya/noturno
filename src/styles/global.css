@@ -2,8 +2,41 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Inter", sans-serif;
 }
 
 body {
   background: var(--void);
+}
+
+header {
+  padding: 12px 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--line);
+}
+
+input {
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 50px;
+  color: var(--ink-faint);
+  font-size: 14px;
+  padding: 8px 12px;
+  min-width: 300px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: linear-gradient(140deg, #3a2140, #1b1522);
+  border: 1px solid var(--line-hot);
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink-dim);
+  flex: none;
 }

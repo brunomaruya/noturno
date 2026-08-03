@@ -12,7 +12,10 @@
       "PowerShell(winget show OpenJS.NodeJS --source winget --accept-source-agreements --disable-interactivity 2>&1)",
       "PowerShell(\"=== LTS ===\")",
       "PowerShell(\"=== current ===\")",
-      "PowerShell(winget install OpenJS.NodeJS.LTS --source winget --accept-source-agreements --accept-package-agreements --disable-interactivity 2>&1)"
+      "PowerShell(winget install OpenJS.NodeJS.LTS --source winget --accept-source-agreements --accept-package-agreements --disable-interactivity 2>&1)",
+      "PowerShell(npm i lucide-react)",
+      "PowerShell(Get-Process | Where-Object { $_.ProcessName -match 'dart|sass|node' } | Select-Object Id, ProcessName, Path | Format-Table -AutoSize)",
+      "PowerShell(Stop-Process -Id 1892 -Force)"
     ]
   }
 }

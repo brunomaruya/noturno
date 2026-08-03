@@ -1,9 +1,9 @@
-import { NoturnoLogo } from "./components/NoturnoLogo";
+import { Header } from "./components/Header";
 
 function App() {
   return (
     <>
-      <NoturnoLogo size={28} />
+      <Header />
     </>
   );
 }
