@@ -1,11 +1,20 @@
+import { BrowserRouter, Route, Routes } from "react-router";
 import "./App.css";
-import Header from "./layout/Header";
+import { Layout } from "./layout/Layout";
+import { Feed } from "./pages/Feed";
+import { Explorer } from "./pages/Explorer";
 
 function App() {
   return (
     <>
-      <Header />
-      <h1 className="text-neon">Hello world!</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/" element={<Feed />} />
+            <Route path="/explorer" element={<Explorer />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
