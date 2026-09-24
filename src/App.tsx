@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router";
 import "./App.css";
 import { Layout } from "./layout/Layout";
 import { Feed } from "./pages/Feed";
-import { Explorer } from "./pages/Explorer";
+import { Explore } from "./pages/Explore";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Feed />} />
-            <Route path="/explorer" element={<Explorer />} />
+            <Route path="/explore" element={<Explore />} />
           </Route>
         </Routes>
       </BrowserRouter>
