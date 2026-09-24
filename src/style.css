@@ -22,6 +22,9 @@
   --color-neon: #ff2d8f; /* primary: active nav, liked state, main CTA */
   --color-neon-deep: #b3105e; /* pressed state of anything neon */
   --color-ice: #2de2ff; /* secondary: hashtags, saved state, focus ring */
+
+  /* Max content width — shared by the top bar's inner row and the page grid */
+  --container-content: 1240px;
 }
 
 @layer base {
@@ -30,5 +33,9 @@
   }
   body {
     background-color: var(--color-void);
+  }
+  * {
+    box-sizing: border-box;
+    /* border: 0.5px solid white; */
   }
 }
