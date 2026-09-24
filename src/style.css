@@ -1,1 +1,34 @@
 @import "tailwindcss";
+
+@theme {
+  /* Wipe Tailwind's default palette so only Noturno's colors are available */
+  --color-*: initial;
+
+  /* --- Backgrounds --- */
+  --color-void: #08070b; /* page background, top bar, tab bar */
+  --color-surface: #110f16; /* post cards, panels */
+  --color-surface-2: #17141e; /* raised elements: avatars, inputs, search field */
+
+  /* --- Borders --- */
+  --color-line: #241f2e; /* default 1px dividers and card borders */
+  --color-line-hot: #3a3145; /* border on hover, seen story rings */
+
+  /* --- Text --- */
+  --color-ink: #efecf4; /* primary text: captions, usernames, counts */
+  --color-ink-dim: #9a93a8; /* secondary text and idle icons */
+  --color-ink-faint: #635c70; /* placeholders, timestamps, EXIF, footer */
+
+  /* --- Accents --- */
+  --color-neon: #ff2d8f; /* primary: active nav, liked state, main CTA */
+  --color-neon-deep: #b3105e; /* pressed state of anything neon */
+  --color-ice: #2de2ff; /* secondary: hashtags, saved state, focus ring */
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    background-color: var(--color-void);
+  }
+}
